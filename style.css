@@ -1,0 +1,486 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Global Styles */
+
+html {
+    font-family: 'Italiana', serif;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 125%;
+}
+
+body {
+    background-color: #201E21;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+figure {
+    margin: 0;
+}
+
+.wrapper {
+    width: 90%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+
+/* TYPOGRAPHY Styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+/* HEADER Styles */
+header {
+    background-image: url(./assets/header-2.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arora {
+    position: relative;
+}
+
+header h1{
+    font-size: 162px;
+    font-family: 'Italiana', serif;
+   
+}
+
+header h1 span {
+    display: block;
+    margin-left: 250px;
+    margin-top: -40px;
+}
+
+header h2 {
+    color:#FABA63;
+    font-size: 46px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-left: 280px;
+    margin-top: -30px;
+}
+
+.heading {
+    position: absolute;
+    top: 25%;
+    left: 20%
+}
+
+header nav ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 30px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+.socials .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.fa-instagram {
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.fa-snapchat-ghost {
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.fa-twitter {
+    color: #FFF;
+}
+
+
+
+header nav ul li a {
+    color:#FABA63;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* Hand Crafted Section */
+.about{
+    padding: 60px 0;
+    background-color: #13171F;
+   
+}
+
+section.about figure {
+    max-width: 25%;
+}
+
+section.about article {
+    width: 65%;
+    margin-left: 20px;
+    height: 100%;
+
+}
+
+section.about article h2 {
+    font-family: 'Italiana', serif;
+    font-size: 52px;
+
+}
+
+.about a {
+    border: 2px solid #FABA63;
+    color: white;
+    padding: 5px;
+    font-family: 'Italiana', serif;
+}
+
+/* Latest Collection */
+
+.latestCollection {
+    padding: 30px 0;
+}
+
+.latestCollection h2 {
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 51px;
+}
+
+.latestCollection ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+    
+}
+
+.latestCollection li {
+    flex-basis: 32%;
+}
+
+
+/* Cata Events Colab */
+
+.cataEventsColab{
+    background-color: #13171F;
+    padding: 100px;
+}
+
+.cataEventsColab ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cataEventsColab ul li {
+    flex-basis: 30%;
+    font-family: 'Italiana', serif;
+    text-align: center;
+}
+
+.cataEventsColab ul li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.cataEventsColab p {            
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top:0;
+    color: #FABA63;
+}
+
+
+/* Sustainable Materials */
+
+.sustainableMaterials article {
+    width: 50%;
+    padding: 200px 80px;
+}
+
+.sustainableMaterials h2 {
+    font-family: 'Italiana', serif;
+    font-size: 51px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+}
+
+.sustainableMaterials p {
+    margin-bottom: 50px;
+}
+
+.sustainableMaterials a {
+    border: 2px solid #FABA63;
+    color: white;
+    padding: 5px;
+    font-family: 'Italiana', serif;
+    
+}
+
+
+
+
+
+/* Mix and Match */
+
+.mixAndMatch article {
+    width: 50%;
+    padding: 200px 80px;
+}
+
+.mixAndMatch h2 {
+    font-family: 'Italiana', serif;
+    font-size: 51px;
+}
+
+.mixAndMatch figure {
+    width: 50%;
+    display: flex;
+}
+
+.mixAndMatch p {
+    margin-bottom: 50px;
+}
+
+.mixAndMatch a {
+    border: 2px solid #FABA63;
+    color: white;
+    padding: 5px;
+    font-family: 'Italiana', serif;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #13171F;
+    box-sizing: unset;
+}
+
+footer .flexContainer {
+
+    justify-content: space-between;
+    padding: 100px;
+}
+
+footer nav a {
+    font-family: 'Italiana', serif;
+    font-size: 1rem;
+    color: white;
+}
+
+footer nav ul li{
+    margin-bottom: 10px;
+}
+
+
+fieldset{
+    border: none;
+
+}
+
+fieldset p {
+    margin-top: 10px;
+}
+
+
+
+footer h3 {
+    font-family: 'Italiana', serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Italiana', serif;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+
+
+footer section div fieldset {
+    width: 700px;
+}
+
+fieldset div {
+    display:flex;
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+input[type=email] {
+    padding: 10px;
+    width: 100%;
+}
+
+button[type=submit] {
+    background-color: black;
+    color: white;
+    border: black;
+    padding: 15px 25px;
+    font-family: 'Italiana', serif;
+    font-size: 1rem;
+    
+}
+
+footer button:hover,
+footer a:focus {
+    opacity: 0.7;
+}
+
+
+.contact h3{
+    margin: 10px;
+    text-align: right;
+}
+
+.contact p {
+    margin: 0;
+    text-align: right;
+}
+
+.copyright {
+    background-color: black;   
+}
+
+section.copyright div {
+    margin: 0 auto;
+}
+
+.copyright p {
+    margin: 5px;
+    font-size: 0.75rem
+}
+
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    /* header */
+
+    header {
+        background-image: url(./assets/header-1.jpg);
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 100px;
+        font-family: 'Italiana', serif;
+    }
+
+    header h2 {
+        font-size: 50px;
+        font-family: 'Italiana', serif;
+        margin-left: 110px;
+    }
+
+    .socials {
+        display:none;
+    }
+
+    .heading {
+        left: 5%;
+    }
+
+    .heading span {
+        margin-left: 150px;
+    }
+
+    /* Hand Crafted */
+
+    .wrapper {
+        flex-direction: column;
+        
+    }
+
+    section.about figure {
+        max-width: 50%;
+
+
+    }
+
+    .about img {
+        width: 200%;
+        
+    }
+    
+    section.about article {
+        text-align: center;
+        margin-right: 150px;
+        width: 100%;
+    }
+
+    .about article p {
+        margin-left: -20px;
+    }
+
+}
